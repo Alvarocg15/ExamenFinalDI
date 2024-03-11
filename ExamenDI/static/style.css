@@ -1,0 +1,119 @@
+html, body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+  }
+
+  aside{
+    height: 100vh;
+    width: 20vw;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow-y:scroll;
+
+    h1{
+        background-color: yellow;
+        color: blue;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 25px;
+    }
+
+    .listado{
+      margin: 0;
+      padding: 0;
+      background-color: blue;
+      color: yellow;
+
+      button{
+        background-color: blue;
+        color: yellow;
+        border-radius: 10px;
+        padding: 5px;
+      }
+    }
+  }
+
+  main{
+    height: 100vh;
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  
+  #mapa {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #geolocator, #info {
+    position: fixed;
+    padding: 0.5rem;
+    box-shadow: 0 0 4px 1px black;
+    z-index: 999;
+    background-color: lightblue;
+  }
+  
+  #geolocator {
+    top: 1rem;
+    right: 1rem;
+  }
+  #geolocator button {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  
+  #info {
+    bottom: 1rem;
+    left: 1rem;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 50px 100px;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "titulo distancia imagen" "desc desc imagen" "enlace enlace imagen";
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #info h3 {
+    grid-area: titulo;
+  }
+  #info span {
+    grid-area: distancia;
+  }
+  #info img {
+    grid-area: imagen;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #info p {
+    grid-area: desc;
+  }
+  #info a {
+    grid-area: enlace;
+  }/*# sourceMappingURL=style.css.map */
+
+  #examen{
+    background-color: blue;
+    color: yellow;
+    border-radius: 10px;
+    border: 3px;
+    border-color: yellow;
+    padding: 5px;
+    height: 100px;
+    position: absolute;
+    z-index: 999999;
+    right: 10px;
+    top: 10px;
+  }

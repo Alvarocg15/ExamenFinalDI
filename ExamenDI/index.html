@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    
+</head>
+
+<body>
+    <aside>
+        <h1>Paradas de taxis de Málaga</h1>
+        <div id="listadoParadas">
+            <template>
+                <div class="listado">
+                    <hr>
+                    <h3 class="nombreParada"></h3>
+                    <p class="direccion"></p>
+                    <button data-pos="">Mas información</button>
+                </div>
+            </template>
+        </div>
+    </aside>
+    <dialog>
+        <h3></h3>
+        <p></p>
+        <form method="dialgo">
+            <button>Cerrar</button>
+        </form>
+    </dialog>
+    
+    <main>
+        <div id="mapa"></div>
+    </main>
+
+    <div id="examen">
+        <p>Examen DAW - MARZO24</h3>
+        <p><strong>Álvaro Cedazo González</strong></h3>
+    </div>
+    
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <script type="module" src="static/app.js"></script>
+</body>
+</html>
